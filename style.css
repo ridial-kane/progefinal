@@ -1,0 +1,171 @@
+
+        /* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 16px;
+}
+
+/* En-tête */
+.header {
+    background-color: #1e88e5;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ffcc00;
+}
+
+/* Section principale */
+.main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.intro h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #1e88e5;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.product-item div {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.product-actions button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background-color: #1e88e5;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-actions button:hover {
+    background-color: #005cb2;
+}
+
+.product-actions .btn-delete {
+    background-color: #e53935;
+}
+
+.product-actions .btn-delete:hover {
+    background-color: #b71c1c;
+}
+
+/* Section Total */
+.RIDIAL {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e88e5;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #1e88e5;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav a {
+        font-size: 0.9rem;
+    }
+
+    .intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .RIDIAL {
+        font-size: 1.2rem;
+    }
+}
